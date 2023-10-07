@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-width: 320px;
+
+}
+
+section {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .conteudo-principal {
+    width: 100%;
+    height: 40%;
+}
+
+section .conteudo-principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .info-produto {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+section .info-produto .nome {
+    text-transform: uppercase;
+    color: rgb(101, 101, 101);
+    letter-spacing: 3px;
+    
+}
+
+section .info-produto h1 {
+    font-size: 1.5rem;
+}
+
+section .info-produto p {
+    font-size: 0.8rem;
+    color: rgb(101, 101, 101);
+    line-height: 20px;
+    font-weight: 400;
+}
+
+section .info-valor {
+    display: flex;
+    gap: 1rem;
+}
+
+section .info-produto .info-valor .preco-desconto {
+    font-size: 2rem;
+    font-weight: 900;
+    color:hsl(158, 36%, 37%);
+}
+
+section .info-produto .info-valor .preco {
+    text-decoration: line-through;
+    color: rgb(101, 101, 101); ;
+}
+
+section .info-produto button img {
+    width: 1.22rem;
+}
+section .info-produto button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 450px) {
+    section {
+        width: 40rem;
+        flex-direction: row;
+    }
+    section .conteudo-principal {
+        width: 50%;
+        height: 100%;
+        display: flex;
+    }
+
+    section .info-produto {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        justify-content: space-around;
+    }
+}
